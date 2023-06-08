@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estruturas de Condições</title>
+    <title>If Ternario</title>
     <script>
+        
         const n1 = Number(prompt('Digite a nota 1:'))
         const n2 = Number(prompt('Digite a nota 2:'))
         const n3 = Number(prompt('Digite a nota 3:'))
@@ -14,17 +15,19 @@
         const media = (n1 + n2 + n3 + n4) / 4
 
         console.log('A sua média é: ' + media)
-
-        if (media >= 7) {
-            console.log('Você foi aprovado!')
-        } else {
-            if (media < 5){
-                console.log('Você foi reprovado!')
-            } else {
-                console.log('Você está de recuperação!')
-            }
+        
+        /*
+        let mensagem = ''
+        if(media >= 7){
+            mensagem = 'Aprovado!'
+        } else{
+            mensagem = 'Reprovado!'
         }
-
+        console.log(mensagem)
+        */
+        
+        let mensagem = media >= 7 ? 'Aprovado!' : 'Reprovado'
+        console.log(mensagem)
 
     </script>
 </head>
